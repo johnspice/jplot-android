@@ -13,13 +13,15 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
       grafica.SetSerie1(Xd,Yd,"graph1",0,true);
 ### Gráfico Dinámico
 ### Métodos Publicos que ayudan a configurar el panel de graficado
->el siguiente metodo se usa para
+los siguientes método se usa para graficar series de Datos
 * public void SetSerie1( float[] xvalues, float[] yvalues,String Titulo,int tp,boolean Unirpuntos)  
->ahora tenemos otro metodo
-* public void SetSerie2(float[] xvalues, float[] yvalues,String Titulo ,int tp ,boolean Unirpuntos,int eje)  
->siguiente emtodo
+>grafica la primer serie sus parametros son dos flotantes para los valores x,y. "String Titulo" el titulo de la serie1 de datos a mostrar en la leyenda del grafico. "int tp" entero para tamaño de punto si no se desea ver el punto colocar 0. "boolean UnirPuntos" si se coloca true todos los puntos van unidos con una linea, false no se unen los puntos. 
+* public void SetSerie2(float[] xvalues, float[] yvalues,String Titulo ,int tp ,boolean Unirpuntos,int eje)
+>lo mismo que SetSerie1 con una parametro extra "int eje" establece el eje al cual van a graficarse los datos y si se coloca 1 graficara en el lado izquierdo si se coloca 2 graficara en el eje y2 a la derecha. 
 * public void SetSerie3(float[] xvalues, float[] yvalues,String Titulo ,int tp ,boolean Unirpuntos,int eje)
+>lo mismo que SetSerie2
 * public void SetSerie4(float[] xvalues, float[] yvalues,String Titulo ,int tp ,boolean Unirpuntos,int eje)
+>lo mismo que SetSerie3
 * public void SetEjey2(String tituloy2)
 * public void SetEscalaAutomatica(boolean auto)
 * public void SetEscalaX(double minX,double maxX)
@@ -27,7 +29,6 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
 * public void SetEscalaY2(double minY2,double maxY2)
 * public void SetShowEjey2(boolean mostrar)
 * public void SetHD(boolean hd)
---------------------------------------------------------------------------------------
 los siguientes metodos ajustan el tamaño de texto reciben como parametro un entero
 * public void  SetSizeTextX(int z)
 * public void  SetSizeTextY1(int z)
