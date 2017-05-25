@@ -66,15 +66,24 @@ Los siguientes métodos ajustan colores en el gráfico reciben 3 parámetros de 
 
 ## Gráfico de Pastelito
 ### Métodos Publicos que ayudan a configurar el gráfico
-* public void SetDatos(float[] datapoints,String [] etiquetas  ) 
+* public void SetDatos(float[] datapoints,String [] etiquetas  )
+>inicializa el graficado recibiendo los datos con sus respectivas etiquetas. 
 * public void SetColorTitulo(int r,int g, int b)
+>ajusta el Color del titulo del grafico
 * public void SetColorAcot(int r, int g, int b)
+>ajusta el color del texto de las acotaciones
 * public void SetColorTextGrafico(int r,int g,int b)
+>ajusta el color del texto dentro del grafico circular
 * public void SetColorFondo(int r, int g,int b)
+>ajusta el color de fondo
+los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de las acotaciones, del texto dentro del grafico(cada sector),  
 * public void SetSizeTitulo(int s)
 * public void SetSizeAcot(int s)
 * public void SetSizeTextGrafico(int s)
 * public void SetSizeTitulo(String t)
+>ajusta el titulo del grafico recibiendo un string con el titulo.
 * public void SetShowPorcentajes(boolean p)
+>si se coloca true apareceran dentro del grafico circular los porcentajes de cada sector, si se coloca false aparecera el valor numerico de cada sector. Tambien cambiaran las acotaciones.
 * public void SetHD(boolean hd)
+>mejora la grafica sualizando los bordes
        
