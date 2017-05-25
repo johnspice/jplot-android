@@ -1,5 +1,5 @@
 # JPLOT (android Y WindowsMobile10)
-JPLOT  es una libreria para graficar Puntos(x,y) ya sea graficos estaticos o Series de tiempo, ademas de graficos circulares (ya se desarrolla la opción de graficos de barras). Esta libreria es para Android y Windows mobile 10(en desarrollo). Existen varias librerias para graficar datos en android como AchartEngine, GraphView ,AndroidPlot, AFreeChart etc. ¿porque jplot? "ES LA MAS SIMPLE DE USAR Con 3 lineas ya se tiene un gráfico" Alta personalización en los gráficos y buena estética, ademas esta en Español.
+JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Series de tiempo, ademas de graficos circulares (ya se desarrolla la opción de graficos de barras). Esta libreria es para Android y Windows mobile 10(en desarrollo). Existen varias librerias para graficar datos en android como AchartEngine, GraphView ,AndroidPlot, AFreeChart etc. ¿porque jplot? "ES LA MAS SIMPLE DE USAR Con 3 lineas ya se tiene un gráfico" Alta personalización en los gráficos y buena estética, ademas esta en Español.
 
 ## proximamente aun esta en desarrollo
 ![GitHub Logo](libreria.png)
@@ -13,6 +13,7 @@ JPLOT  es una libreria para graficar Puntos(x,y) ya sea graficos estaticos o Ser
       grafica.SetSerie1(Xd,Yd,"graph1",0,true);
 ### Gráfico Dinámico
 ### Métodos Publicos que ayudan a configurar el panel de graficado
+
 * public void SetSerie1( float[] xvalues, float[] yvalues,String Titulo,int tp,boolean Unirpuntos)
 * public void SetSerie2(float[] xvalues, float[] yvalues,String Titulo ,int tp ,boolean Unirpuntos,int eje)
 * public void SetSerie3(float[] xvalues, float[] yvalues,String Titulo ,int tp ,boolean Unirpuntos,int eje)
@@ -24,15 +25,22 @@ JPLOT  es una libreria para graficar Puntos(x,y) ya sea graficos estaticos o Ser
 * public void SetEscalaY2(double minY2,double maxY2)
 * public void SetShowEjey2(boolean mostrar)
 * public void SetHD(boolean hd)
+Los siguientes metodos Ajustan el tamaño del texto en el grafico 
 * public void  SetSizeTextX(int z)
 * public void  SetSizeTextY1(int z)
 * public void  SetSizeTextY2(int z)
+
 * public void  SetSizeTitulo(int z)
+
 * public void  SetSizeTituloX(int z)
 * public void  SetSizeTituloY1(int z)
 * public void  SetSizeTituloY2(int z)
+
 * public void SetSizeLeyend(int z)
+
 * public void SetGruesoLinea(int g)
+       ajusta el grueso de linea del grafico (la linea que une cada punto)
+Los siguientes métodos ajustan colores en el gráfico reciben 3 parametros de tipo entero r=rojo, g=verde, b=azul
 * public void SetColorFondo(int r,int g,int b)      
 * public void SetColorEjes(int r,int g,int b)        
 * public void SetColorCuadricula(int r, int g, int b)
