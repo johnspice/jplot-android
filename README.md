@@ -28,34 +28,33 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
 * public void SetShowEjey2(boolean mostrar)
 * public void SetHD(boolean hd)
 --------------------------------------------------------------------------------------
-los siguientes metodos ajustan el tamaño de texto
-> public void  SetSizeTextX(int z)
-> public void  SetSizeTextY1(int z)
-> public void  SetSizeTextY2(int z)
-> public void  SetSizeTitulo(int z)
-> public void  SetSizeTituloX(int z)
-> public void  SetSizeTituloY1(int z)
-> public void  SetSizeTituloY2(int z)
-> public void SetSizeLeyend(int z)
--------------------------------------------------------------------------------------
->public void SetGruesoLinea(int g)
- Ajusta el grueso de la linea que une los puntos.
+los siguientes metodos ajustan el tamaño de texto reciben como parametro un entero
+* public void  SetSizeTextX(int z)
+* public void  SetSizeTextY1(int z)
+* public void  SetSizeTextY2(int z)
+* public void  SetSizeTitulo(int z)
+* public void  SetSizeTituloX(int z)
+* public void  SetSizeTituloY1(int z)
+* public void  SetSizeTituloY2(int z)
+* public void SetSizeLeyend(int z)
+* public void SetGruesoLinea(int g).
+>Ajusta el grueso de la linea que une los puntos
 
-Los siguientes métodos ajustan colores en el gráfico reciben 3 parametros de tipo entero r=rojo, g=verde, b=azul
->public void SetColorFondo(int r,int g,int b)      
->public void SetColorEjes(int r,int g,int b)        
->public void SetColorCuadricula(int r, int g, int b)
->public void SetColorTitulo(int r,int g,int b)      
->public void SetColorTituloX(int r,int g,int b)    
->public void SetColorTituloY(int r,int g,int b)    
->public void SetColorTituloY2(int r,int g,int b)    
->public void SetColorTextX(int r, int g, int b)   
->public void SetColorTextY1(int r, int g, int b)   
->public void SetColorTextY2(int r, int g, int b)  
->public void SetColorSerie1(int r, int g, int b)
->public void SetColorSerie2(int r, int g, int b)
->public void SetColorSerie3(int r, int g, int b)
->public void SetColorSerie4(int r, int g, int b)
+Los siguientes métodos ajustan colores en el gráfico reciben 3 parámetros de tipo entero r=rojo, g=verde, b=azul
+* public void SetColorFondo(int r,int g,int b)      
+* public void SetColorEjes(int r,int g,int b)        
+* public void SetColorCuadricula(int r, int g, int b)
+* public void SetColorTitulo(int r,int g,int b)      
+* public void SetColorTituloX(int r,int g,int b)    
+* public void SetColorTituloY(int r,int g,int b)    
+* public void SetColorTituloY2(int r,int g,int b)    
+* public void SetColorTextX(int r, int g, int b)   
+* public void SetColorTextY1(int r, int g, int b)   
+* public void SetColorTextY2(int r, int g, int b)  
+* public void SetColorSerie1(int r, int g, int b)
+* public void SetColorSerie2(int r, int g, int b)
+* public void SetColorSerie3(int r, int g, int b)
+* public void SetColorSerie4(int r, int g, int b)
 
 
 
