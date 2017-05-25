@@ -75,8 +75,9 @@ Los siguientes métodos ajustan colores en el gráfico reciben 3 parámetros de 
 * public void SetColorTextGrafico(int r,int g,int b)
 >ajusta el color del texto dentro del grafico circular
 * public void SetColorFondo(int r, int g,int b)
->ajusta el color de fondo
-los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de las acotaciones, del texto dentro del grafico(cada sector),  
+>ajusta el color de fondo.
+
+los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de las acotaciones, del texto dentro del grafico(cada sector).
 * public void SetSizeTitulo(int s)
 * public void SetSizeAcot(int s)
 * public void SetSizeTextGrafico(int s)
