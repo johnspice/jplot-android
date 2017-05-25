@@ -13,9 +13,11 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
       grafica.SetSerie1(Xd,Yd,"graph1",0,true);
 ### Gráfico Dinámico
 ### Métodos Publicos que ayudan a configurar el panel de graficado
-
-* public void SetSerie1( float[] xvalues, float[] yvalues,String Titulo,int tp,boolean Unirpuntos)
-* public void SetSerie2(float[] xvalues, float[] yvalues,String Titulo ,int tp ,boolean Unirpuntos,int eje)
+>el siguiente metodo se usa para
+* public void SetSerie1( float[] xvalues, float[] yvalues,String Titulo,int tp,boolean Unirpuntos)  
+>ahora tenemos otro metodo
+* public void SetSerie2(float[] xvalues, float[] yvalues,String Titulo ,int tp ,boolean Unirpuntos,int eje)  
+>siguiente emtodo
 * public void SetSerie3(float[] xvalues, float[] yvalues,String Titulo ,int tp ,boolean Unirpuntos,int eje)
 * public void SetSerie4(float[] xvalues, float[] yvalues,String Titulo ,int tp ,boolean Unirpuntos,int eje)
 * public void SetEjey2(String tituloy2)
@@ -25,36 +27,31 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
 * public void SetEscalaY2(double minY2,double maxY2)
 * public void SetShowEjey2(boolean mostrar)
 * public void SetHD(boolean hd)
-Los siguientes metodos Ajustan el tamaño del texto en el grafico 
 * public void  SetSizeTextX(int z)
 * public void  SetSizeTextY1(int z)
 * public void  SetSizeTextY2(int z)
-
 * public void  SetSizeTitulo(int z)
-
 * public void  SetSizeTituloX(int z)
 * public void  SetSizeTituloY1(int z)
 * public void  SetSizeTituloY2(int z)
-
 * public void SetSizeLeyend(int z)
-
 * public void SetGruesoLinea(int g)
-       ajusta el grueso de linea del grafico (la linea que une cada punto)
-Los siguientes métodos ajustan colores en el gráfico reciben 3 parametros de tipo entero r=rojo, g=verde, b=azul
-* public void SetColorFondo(int r,int g,int b)      
-* public void SetColorEjes(int r,int g,int b)        
-* public void SetColorCuadricula(int r, int g, int b)
-* public void SetColorTitulo(int r,int g,int b)      
-* public void SetColorTituloX(int r,int g,int b)    
-* public void SetColorTituloY(int r,int g,int b)    
-* public void SetColorTituloY2(int r,int g,int b)    
-* public void SetColorTextX(int r, int g, int b)   
-* public void SetColorTextY1(int r, int g, int b)   
-* public void SetColorTextY2(int r, int g, int b)  
-* public void  SetColorSerie1(int r, int g, int b)
-* public void  SetColorSerie2(int r, int g, int b)
-* public void  SetColorSerie3(int r, int g, int b)
-* public void  SetColorSerie4(int r, int g, int b)
+
+>Los siguientes métodos ajustan colores en el gráfico reciben 3 parametros de tipo entero r=rojo, g=verde, b=azul
+- public void SetColorFondo(int r,int g,int b)      
+- public void SetColorEjes(int r,int g,int b)        
+- public void SetColorCuadricula(int r, int g, int b)
+- public void SetColorTitulo(int r,int g,int b)      
+- public void SetColorTituloX(int r,int g,int b)    
+- public void SetColorTituloY(int r,int g,int b)    
+- public void SetColorTituloY2(int r,int g,int b)    
+- public void SetColorTextX(int r, int g, int b)   
+- public void SetColorTextY1(int r, int g, int b)   
+- public void SetColorTextY2(int r, int g, int b)  
+- public void  SetColorSerie1(int r, int g, int b)
+- public void  SetColorSerie2(int r, int g, int b)
+- public void  SetColorSerie3(int r, int g, int b)
+- public void  SetColorSerie4(int r, int g, int b)
 
 
 
