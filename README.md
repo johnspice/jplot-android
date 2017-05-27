@@ -10,8 +10,7 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
 
 ##  Gráfico con Series de Puntos (x,y)
 ### Gráfico Estático
-      private Plot2D grafica=Plot2D(context,"xx vs yy","xx","yy");
-      grafica.SetSerie1(Xd,Yd,"graph1",0,true);
+     
 ### Gráfico Dinámico
 ### Métodos Publicos que ayudan a configurar el panel de graficado
 los siguientes 4 metodos se usa para graficar series de Datos
