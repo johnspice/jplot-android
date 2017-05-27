@@ -2,8 +2,9 @@
 JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Series de tiempo, ademas de graficos circulares (ya se desarrolla la opción de graficos de barras). Esta libreria es para Android y Windows mobile 10(en desarrollo). Existen varias librerias para graficar datos en android como AchartEngine, GraphView ,AndroidPlot, AFreeChart etc. ¿porque jplot? "ES LA MAS SIMPLE DE USAR Con 3 lineas ya se tiene un gráfico" Alta personalización en los gráficos y buena estética, ademas esta en Español.
 
 ## proximamente aun esta en desarrollo
-![GitHub Logo](libreria.png)
-![GitHub Logo](libreria2.png)
+![GitHub Logo](/imagenes/SerieContinua.png)
+![GitHub Logo](/imagenes/graficoPastel.png)
+![GitHub Logo](/imagenes/seriePuntos.png)
 
 ## Como Agregar a mi proyecto Android Studio
 
@@ -22,6 +23,8 @@ los siguientes 4 metodos se usa para graficar series de Datos
 >lo mismo que SetSerie2
 * public void SetSerie4(float[] xvalues, float[] yvalues,String Titulo ,int tp ,boolean Unirpuntos,int eje)
 >lo mismo que SetSerie3
+* public void SetSerie5(float[] xvalues, float[] yvalues,String Titulo ,int tp ,boolean Unirpuntos,int eje)
+>lo mismo que serie 4
 * public void SetEjey2(String tituloy2)
 >ajusta el titulo del ejey2(lado derecho) a mostrar en el grafico es de tipo string. si no se llama este metodo por default se llamara Y2
 * public void SetEscalaAutomatica(boolean auto)
@@ -87,4 +90,6 @@ los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de 
 >si se coloca true apareceran dentro del grafico circular los porcentajes de cada sector, si se coloca false aparecera el valor numerico de cada sector. Tambien cambiaran las acotaciones.
 * public void SetHD(boolean hd)
 >mejora la grafica sualizando los bordes
+*public void SetCentro (double c)
+>aumenta o disminuye el centro del grafico deben ser valores tipo double entre 0 y 1 ó no se aplicara el ajuste.
        
