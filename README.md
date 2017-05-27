@@ -7,7 +7,10 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
 ![GitHub Logo](/imagenes/seriePuntos.png)
 
 ## Como Agregar a mi proyecto Android Studio
-
+1. descarga el proyecto extrae "jplor.aar"
+2. en tu proyecto click derecho sobre app, new-module, "import .jar/.aar package", agregar el archivo "jplor.aar"
+3. en tu proyecto click derecho sobre app, "open module settings", app-dependencies, Add-"Module dependency", jplot-"clik ok".   
+4. ya puedes crear el primer gráfico ya se estatico o dinámico. 
 ##  Gráfico con Series de Puntos (x,y)
 ### Gráfico Estático
      
