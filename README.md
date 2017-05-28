@@ -7,7 +7,7 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
 ![GitHub Logo](/imagenes/seriePuntos.png)
 
 ## Como Agregar a mi proyecto Android Studio
-1. descarga el proyecto extrae "jplot.aar"
+1. descarga el proyecto extrae "jplot.aar" que esta dentro de la carpeta "Libreria Jplot"
 2. en tu proyecto click derecho sobre app, new-module, "import .jar/.aar package", agregar el archivo "jplot.aar"
 ![GitHub Logo](/imagenes/p1.png)
 3. en tu proyecto click derecho sobre app, "open module settings", app-dependencies, Add-"Module dependency", jplot-"clik ok".   
