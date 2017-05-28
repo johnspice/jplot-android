@@ -50,9 +50,12 @@ En MainActivity.java agregar
            plot = new PlotPlanitoXY(context,"Titulo principal del grafico","titulo eje x","titulo eje y");
            plot.SetSerie1(X,Y,"graph 1",5,true);// el 5 es el tamaño de punto "true" es para unir los puntos 
                                                 //con una linea
+           //antes de mostrar el grafico en pantalla(LinearLayout) deben de ir todos los ajustes "Set" del grafico.                                plot.SetHD(true); //ajustamos la calidad hd que suaviza bordes del grafico.     
            pantalla.addView(plot);                                     
          }
       }
+      
+ Run app y !LISTO!         
           
 ### Gráfico Dinámico (Serie de Tiempo)
 
@@ -144,12 +147,14 @@ En MainActivity.java agregar
         float[] datapoints = {2,5,8,11,23,7,16};
         String[] etiquetas={"lunes", "martes", "miercoles","jueves","viernes","sabado","domingo"};
         pastel.SetDatos(datapoints,etiquetas);
-        pastel.SetHD(true);
+        //antes de mostrar el grafico en pantalla(LinearLayout) deben de ir todos los ajustes "Set" del grafico.
+        pastel.SetHD(true); //ajustamos la calidad hd que suaviza bordes del grafico.
         pantalla.addView(pastel);
         
         }
-        
-   }
+      }
+      
+  
          
      
 
