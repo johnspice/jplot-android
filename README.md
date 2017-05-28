@@ -42,7 +42,7 @@ En MainActivity.java agregar
            setContentView(R.layout.activity_main);
            pantalla= (LinearLayout) (findViewById(R.id.pantalla));
            
-           X=new float[4]; Y=new float[4];
+           X=new float[4]; Y=new float[4];// si se desean graficar datos tipo double debe convertirse de "double a float"
            X[0]=3.4f;Y[0]=2.5f;
            X[1]=11.3f;Y[1]=6.6f;
            X[2]=12.4f;Y[2]=7.6f:
@@ -50,7 +50,11 @@ En MainActivity.java agregar
            plot = new PlotPlanitoXY(context,"Titulo principal del grafico","titulo eje x","titulo eje y");
            plot.SetSerie1(X,Y,"graph 1",5,true);// el 5 es el tamaño de punto "true" es para unir los puntos 
                                                 //con una linea
-           //antes de mostrar el grafico en pantalla(LinearLayout) deben de ir todos los ajustes "Set" del grafico.                                plot.SetHD(true); //ajustamos la calidad hd que suaviza bordes del grafico.     
+           /*antes de mostrar el grafico en pantalla(LinearLayout) deben de ir todos los ajustes "Set" del grafico.
+           Todos los metodos publicos que ayudan a personalizar el grafico se describen cada uno en la siguiente sección */
+           
+           plot.SetHD(true); //ajustamos la calidad hd que suaviza bordes del grafico. por default esta desactivado 
+           plot.SetTouch(true);// activa el touch sobre el grafico no es necesario colocarlo ya que por default esta activado  
            pantalla.addView(plot);                                     
          }
       }
@@ -58,7 +62,8 @@ En MainActivity.java agregar
  Run app y !LISTO!         
           
 ### Gráfico Dinámico (Serie de Tiempo)
-
+ 
+ revisar el codigo ejemplo que esta en la carpeta "Ejemplos"
 
 
 ### Métodos Publicos que ayudan a configurar el panel de graficado
@@ -147,8 +152,11 @@ En MainActivity.java agregar
         float[] datapoints = {2,5,8,11,23,7,16};
         String[] etiquetas={"lunes", "martes", "miercoles","jueves","viernes","sabado","domingo"};
         pastel.SetDatos(datapoints,etiquetas);
-        //antes de mostrar el grafico en pantalla(LinearLayout) deben de ir todos los ajustes "Set" del grafico.
-        pastel.SetHD(true); //ajustamos la calidad hd que suaviza bordes del grafico.
+        
+       /*antes de mostrar el grafico en pantalla(LinearLayout) deben de ir todos los ajustes "Set" del grafico.
+           Todos los metodos publicos que ayudan a personalizar el grafico se describen cada uno en la siguiente sección */
+           
+        pastel.SetHD(true); //ajustamos la calidad hd que suaviza bordes del grafico. por default esta desactivado
         pantalla.addView(pastel);
         
         }
