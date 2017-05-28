@@ -14,6 +14,46 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
 ![GitHub Logo](/imagenes/p2.png)
 4. ya puedes crear el primer gráfico ya se estatico o dinámico. 
 ##  Gráfico con Series de Puntos (x,y)
+    en activity_main.xml agregar;
+    
+    <LinearLayout
+            android:id="@+id/pantalla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            
+     </LinearLayout>
+En MainActivity.java agregar 
+
+    "import com.juang.jplot.PlotPlanitoXY"; 
+    
+    public class MainActivity extends AppCompatActivity {
+    
+          private PlotPlanitoXY plot;
+          private LinearLayout pantalla;
+          Context context;
+          
+          float [] X,Y;
+     
+          @Override
+        protected void onCreate(Bundle savedInstanceState) {
+           super.onCreate(savedInstanceState);
+           setContentView(R.layout.activity_main);
+           pantalla= (LinearLayout) (findViewById(R.id.pantalla));
+           
+           X=new float[4]; Y=new float[4];
+           X[0]=3.4f;Y[0]=2.5f;
+           X[1]=11.3f;Y[1]=6.6f;
+           X[2]=12.4f;Y[2]=7.6f:
+           X[3]=20.9f;Y[3]=10.4f;
+           plot = new PlotPlanitoXY(context,"Titulo principal del grafico","titulo eje x","titulo eje y");
+           plot.SetSerie1(X,Y,"graph 1",5,true);// el 5 es el tamaño de punto "true" es para unir los puntos 
+                                                //con una linea
+           pantalla.addView(plot);                                     
+         }
+      }
+     
+     
 ### Gráfico Estático
      
 ### Gráfico Dinámico
