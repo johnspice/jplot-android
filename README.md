@@ -23,9 +23,10 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
             android:orientation="horizontal">
             
      </LinearLayout>
+     
 En MainActivity.java agregar 
 
-    "import com.juang.jplot.PlotPlanitoXY"; 
+    import com.juang.jplot.PlotPlanitoXY; 
     
     public class MainActivity extends AppCompatActivity {
     
@@ -52,11 +53,11 @@ En MainActivity.java agregar
            pantalla.addView(plot);                                     
          }
       }
-     
-     
-### Gráfico Estático
-     
-### Gráfico Dinámico
+          
+### Gráfico Dinámico (Serie de Tiempo)
+
+
+
 ### Métodos Publicos que ayudan a configurar el panel de graficado
 los siguientes 4 metodos se usa para graficar series de Datos
 * public void SetSerie1( float[] xvalues, float[] yvalues,String Titulo,int tp,boolean Unirpuntos)  
@@ -112,6 +113,46 @@ Los siguientes métodos ajustan colores en el gráfico reciben 3 parámetros de 
 
 
 ## Gráfico de Pastelito
+
+ en activity_main.xml agregar;
+    
+     <LinearLayout
+            android:id="@+id/pantalla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            
+     </LinearLayout>
+     
+En MainActivity.java agregar 
+
+    import com.juang.jplot.PlotPastelito; 
+    
+    public class MainActivity extends AppCompatActivity {
+    
+     private PlotPastelito pastel;
+     private LinearLayout pantalla; 
+     Context context;
+     
+     @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        pantalla= (LinearLayout) (findViewById(R.id.pantalla));
+        pastel=new PlotPastelito(this,"Ganancias Diarias");
+        float[] datapoints = {2,5,8,11,23,7,16};
+        String[] etiquetas={"lunes", "martes", "miercoles","jueves","viernes","sabado","domingo"};
+        pastel.SetDatos(datapoints,etiquetas);
+        pastel.SetHD(true);
+        pantalla.addView(pastel);
+        
+        }
+        
+   }
+         
+     
+
 ### Métodos Publicos que ayudan a configurar el gráfico
 * public void SetDatos(float[] datapoints,String [] etiquetas  )
 >inicializa el graficado recibiendo los datos con sus respectivas etiquetas. 
