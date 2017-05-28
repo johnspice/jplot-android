@@ -63,7 +63,7 @@ En MainActivity.java agregar
           
 ### Gráfico Dinámico (Serie de Tiempo)
  
- revisar el codigo ejemplo que esta en la carpeta "Ejemplos"
+ revisar el codigo ejemplo que esta en la carpeta "Ejemplos usando Jplot"
 
 
 ### Métodos Publicos que ayudan a configurar el panel de graficado
