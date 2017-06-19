@@ -190,7 +190,7 @@ los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de 
 >si se coloca true apareceran dentro del grafico circular los porcentajes de cada sector, si se coloca false aparecera el valor numerico de cada sector. Tambien cambiaran las acotaciones.
 * public void SetHD(boolean hd)
 >mejora la grafica sualizando los bordes
-*public void SetCentro (double c)
+* public void SetCentro (double c)
 >aumenta o disminuye el centro del grafico deben ser valores tipo double entre 0 y 1 ó no se aplicara el ajuste.
        
 ## Gráfico de Barras
