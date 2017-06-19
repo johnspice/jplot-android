@@ -192,3 +192,5 @@ los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de 
 *public void SetCentro (double c)
 >aumenta o disminuye el centro del grafico deben ser valores tipo double entre 0 y 1 ó no se aplicara el ajuste.
        
+##Gráfico de Barras
+Proximanete aun en construccion!!
