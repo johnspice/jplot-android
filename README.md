@@ -42,6 +42,7 @@ En MainActivity.java agregar
         protected void onCreate(Bundle savedInstanceState) {
            super.onCreate(savedInstanceState);
            setContentView(R.layout.activity_main);
+           context=this;
            pantalla= (LinearLayout) (findViewById(R.id.pantalla));
            
            X=new float[4]; Y=new float[4];// si se desean graficar datos tipo double debe convertirse de "double a float"
@@ -148,9 +149,9 @@ En MainActivity.java agregar
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        context=this;
         pantalla= (LinearLayout) (findViewById(R.id.pantalla));
-        pastel=new PlotPastelito(this,"Ganancias Diarias");
+        pastel=new PlotPastelito(context,"Ganancias Diarias");//puedes usar simplemente "this" en lugar de context  
         float[] datapoints = {2,5,8,11,23,7,16};
         String[] etiquetas={"lunes", "martes", "miercoles","jueves","viernes","sabado","domingo"};
         pastel.SetDatos(datapoints,etiquetas);
