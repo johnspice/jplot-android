@@ -197,3 +197,4 @@ los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de 
        
 ## Gráfico de Barras
 Proximanete aun en construccion!!
+![GitHub Logo](/imagenes/obras.jpeg)
