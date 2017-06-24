@@ -5,8 +5,8 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
 ![GitHub Logo](/imagenes/SerieContinua.png)
 ![GitHub Logo](/imagenes/graficoPastel.png)
 ![GitHub Logo](/imagenes/seriePuntos.png)
-![GitHub Logo](/imagenes/barras.png)
-![GitHub Logo](/imagenes/apiladas.png)
+![GitHub Logo](/imagenes/ba.png)
+![GitHub Logo](/imagenes/bap.png)
 
 ## Como Agregar a mi proyecto Android Studio
 puedes ver el procedimiento en youtube: https://www.youtube.com/watch?v=PmizMdG3E48&t=59s
