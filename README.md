@@ -3,8 +3,8 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
 
 ## documentación aun en desarrollo
 ![GitHub Logo](/imagenes/SerieContinua.png)
-![GitHub Logo](/imagenes/pastel.png)
 ![GitHub Logo](/imagenes/seriePuntos.png)
+![GitHub Logo](/imagenes/pastel.png)
 ![GitHub Logo](/imagenes/BC.png)
 ![GitHub Logo](/imagenes/BCA.png)
 ![GitHub Logo](/imagenes/BCAPI.png)
