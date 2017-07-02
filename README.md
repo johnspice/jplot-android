@@ -13,7 +13,7 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
 
 ## Como Agregar a mi proyecto Android Studio
 puedes ver el procedimiento en youtube: https://www.youtube.com/watch?v=PmizMdG3E48&t=59s
-1. descarga el proyecto extrae "jplot.aar" que esta dentro de la carpeta "Libreria Jplot"
+1. descarga el proyecto extrae "jplot1.0.aar" que esta dentro de la carpeta "Libreria Jplot"
 2. en tu proyecto click derecho sobre app, new-module, "import .jar/.aar package", agregar el archivo "jplot.aar"
 ![GitHub Logo](/imagenes/p1.png)
 3. en tu proyecto click derecho sobre app, "open module settings", app-dependencies, Add-"Module dependency", jplot-"clik ok".   
@@ -199,5 +199,6 @@ los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de 
 >aumenta o disminuye el centro del grafico deben ser valores tipo double entre 0 y 1 ó no se aplicara el ajuste.
        
 ## Gráfico de Barras
-Proximanete aun en construccion!!
-![GitHub Logo](/imagenes/obra.jpg)
+ LA carpeta "Ejemplos usando Jplot" contine codigo fuente que muestra el funcionamiento de graficos de barras. 
+ Documentacion aun en construccion!!.
+
