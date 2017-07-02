@@ -311,8 +311,7 @@ El resultado es
   
 
 ## Columnas apiladas
-dentro del método  onCreate en MainActivi.java agregar
-        
+
      import com.juang.jplot.PlotBarritas;
     
      public class MainActivity extends AppCompatActivity {
