@@ -73,17 +73,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
     public void GraphPastel(){
+
         pastel=new PlotPastelito(this,"Ganancias Diarias");
         float[] datapoints = {2,5,8,11,23,7,16};
         String[] etiquetas={"lunes", "martes", "miercoles","jueves","viernes","sabado","domingo"};
         pastel.SetDatos(datapoints,etiquetas);
         pastel.SetHD(true);
+        pastel.SetColorDato(5,0,0,0);//el dato 5 o sea "23" de color negro los ultimos 3 enteros son colores rgb
+        pastel.SetColorDato(3,255,0,0);//el dato 3 o sea "8" de color rojo los ultimos 3 enteros son colores rgb
+
         pantalla.removeAllViews();
         pantalla.addView(pastel);
+
+
+
+
+
+
     }
 
 
@@ -163,7 +170,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     //metodo que se ejecuta al hacer click en el boton "parar plot 2d"
-
     public void parar(View v){
         timer.cancel();
     }

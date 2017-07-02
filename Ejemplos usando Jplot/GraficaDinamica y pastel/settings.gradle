@@ -1,1 +1,1 @@
-include ':app', ':jplot'
+include ':app', ':jplot1.0'

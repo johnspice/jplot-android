@@ -9,7 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/jplot" />
+            <option value="$PROJECT_DIR$/jplot1.0" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
