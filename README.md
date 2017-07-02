@@ -354,7 +354,7 @@ dentro del método  onCreate en MainActivi.java agregar
 
 
 El resultado es 
- ![GitHub Logo](/imagenes/bcapi.png)
+ ![GitHub Logo](/imagenes/bcapi100.png)
 
 
 ## Columnas apiladas al 100%
@@ -398,6 +398,6 @@ El resultado es
      }  
  
  El resultado es 
- ![GitHub Logo](/imagenes/bcapi100.png)    
+ ![GitHub Logo](/imagenes/bcapi.png)    
      
 
