@@ -1,7 +1,7 @@
 # JPLOT (android Y WindowsMobile10)
-JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Series de tiempo, ademas de graficos circulares (ya se desarrolla la opción de graficos de barras). Esta libreria es para Android y Windows mobile 10(en desarrollo). Existen varias librerias para graficar datos en android como AchartEngine, GraphView ,AndroidPlot, AFreeChart etc. ¿porque jplot? "ES LA MAS SIMPLE DE USAR Con 3 lineas ya se tiene un gráfico" Alta personalización en los gráficos y buena estética, ademas esta en Español.
+JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Series de tiempo, graficos circulares y de barras . Esta libreria es para Android y Windows mobile 10(en desarrollo). Existen varias librerias para graficar datos en android como AchartEngine, GraphView ,AndroidPlot, AFreeChart etc. ¿porque jplot? "ES LA MAS SIMPLE DE USAR Con 3 lineas ya se tiene un gráfico" Alta personalización en los gráficos y buena estética, ademas esta en Español.
 
-## documentación aun en desarrollo
+
 ![GitHub Logo](/imagenes/SerieContinua.png)
 ![GitHub Logo](/imagenes/seriePuntos.png)
 ![GitHub Logo](/imagenes/pastel.png)
@@ -199,6 +199,67 @@ los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de 
 >aumenta o disminuye el centro del grafico deben ser valores tipo double entre 0 y 1 ó no se aplicara el ajuste.
        
 ## Gráfico de Barras
- LA carpeta "Ejemplos usando Jplot" contine codigo fuente que muestra el funcionamiento de graficos de barras. 
- Documentacion aun en construccion!!.
+
+
+## COLUMNAS 
+
+
+ en activity_main.xml agregar;
+    
+     <LinearLayout
+            android:id="@+id/pantalla"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            
+     </LinearLayout>
+     
+     
+ En MainActivity.java agregar 
+ 
+
+     import com.juang.jplot.PlotBarritas;
+    
+     public class MainActivity extends AppCompatActivity {
+    
+     PlotBarritas Columna;
+     Context context;
+     
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        context=this;
+        pantalla= (LinearLayout) (findViewById(R.id.pantalla));
+        
+        String x[]={"lunes","martes","miercoles","jueves","viernes"};
+        double y[]={20,30,44,0,-25};
+        Columna=new PlotBarritas(context,"Gráfico de Columnas ","articulos vendidos por dia");
+                                //en context puede colocarse simplemente this
+        //personalizacion del grafico
+        Columna.Columna(x,y);// OJO x e y DEBEN SER DEL MISMO TAMAÑO O CAUSARA QUE SE CIERRE LA APLICACION.
+        Columna.SetHD(true);
+        //cambiemos el color del dato 3 o sea "44" rojo=255,verde=0,Azul=0 los ultimos tres enteros son los colores en rgb
+        Columna.SetColorPila(3,255,0,0);//muestra el tercer dato en color rojo
+
+        //mostrando en pantalla
+        pantalla.removeAllViews();
+        pantalla.addView(Columna);
+        
+       
+        
+        }
+      }
+      
+## COLUMNAS AGRUPADAS
+
+
+## COLUMNAS APILADAS
+
+
+
+## COLUMNAS APILADAS AL 100%
+ 
+     
+     
 
