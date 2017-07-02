@@ -11,7 +11,7 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
 ![GitHub Logo](/imagenes/BCAPI100.png)
 
 
-## Como Agregar a mi proyecto Android Studio
+# Como Agregar a mi proyecto Android Studio
 puedes ver el procedimiento en youtube: https://www.youtube.com/watch?v=PmizMdG3E48&t=59s
 1. descarga el proyecto extrae "jplot1.0.aar" que esta dentro de la carpeta "Libreria Jplot"
 2. en tu proyecto click derecho sobre app, new-module, "import .jar/.aar package", agregar el archivo "jplot.aar"
@@ -19,7 +19,7 @@ puedes ver el procedimiento en youtube: https://www.youtube.com/watch?v=PmizMdG3
 3. en tu proyecto click derecho sobre app, "open module settings", app-dependencies, Add-"Module dependency", jplot-"clik ok".   
 ![GitHub Logo](/imagenes/p2.png)
 4. ya puedes crear el primer gráfico ya se estatico o dinámico. 
-##  Gráfico con Series de Puntos (x,y)
+#  Gráfico con Series de Puntos (x,y)
     en activity_main.xml agregar;
     
     <LinearLayout
@@ -127,7 +127,7 @@ Los siguientes métodos ajustan colores en el gráfico reciben 3 parámetros de 
 
 
 
-## Gráfico de Pastelito
+# Gráfico de Pastelito
 
  en activity_main.xml agregar;
     
@@ -198,10 +198,10 @@ los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de 
 * public void SetCentro (double c)
 >aumenta o disminuye el centro del grafico deben ser valores tipo double entre 0 y 1 ó no se aplicara el ajuste.
        
-## Gráfico de Barras
+# Gráfico de Barras
 
 
-## COLUMNAS 
+## Columnas
 
 
  en activity_main.xml agregar;
@@ -251,14 +251,14 @@ los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de 
         }
       }
       
-## COLUMNAS AGRUPADAS
+## Columnas agrupadas
 
 
-## COLUMNAS APILADAS
+## Columnas apiladas
 
 
 
-## COLUMNAS APILADAS AL 100%
+## Columnas apiladas al 100%
  
      
      
