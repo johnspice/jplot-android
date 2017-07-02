@@ -1,5 +1,11 @@
 # JPLOT (android Y WindowsMobile10)
-JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Series de tiempo, graficos circulares y de barras . Esta libreria es para Android y Windows mobile 10(en desarrollo). Existen varias librerias para graficar datos en android como AchartEngine, GraphView ,AndroidPlot, AFreeChart etc. ¿porque jplot? "ES LA MAS SIMPLE DE USAR Con 3 lineas ya se tiene un gráfico" Alta personalización en los gráficos y buena estética, ademas esta en Español.
+JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estáticos o Series de tiempo, gráficos circulares y de barras . Esta libreria es para Android y Windows mobile 10(en desarrollo). Existen varias librerias para graficar datos en android como AchartEngine, GraphView ,AndroidPlot, AFreeChart etc. ¿porque jplot? "ES LA MAS SIMPLE DE USAR Con 3 lineas ya se tiene un gráfico" Alta personalización en los gráficos y buena estética, además esta en Español.
+
+proximas implementaciones:
+-plano polar
+-coordendas geograficas latitud longitud sobre mapamundi
+-grafico de burbujas
+
 
 
 ![GitHub Logo](/imagenes/SerieContinua.png)
@@ -13,12 +19,12 @@ JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estaticos o Se
 
 # Como Agregar a mi proyecto Android Studio
 puedes ver el procedimiento en youtube: https://www.youtube.com/watch?v=PmizMdG3E48&t=59s
-1. descarga el proyecto extrae "jplot1.0.aar" que esta dentro de la carpeta "Libreria Jplot"
-2. en tu proyecto click derecho sobre app, new-module, "import .jar/.aar package", agregar el archivo "jplot.aar"
+1. descarga el proyecto y extrae "jplot1.0.aar" que esta dentro de la carpeta "Libreria Jplot"
+2. en tu proyecto click derecho sobre app, new-module, "import .jar/.aar package", agregar el archivo "jplot1.0.aar"
 ![GitHub Logo](/imagenes/p1.png)
-3. en tu proyecto click derecho sobre app, "open module settings", app-dependencies, Add-"Module dependency", jplot-"clik ok".   
+3. en tu proyecto click derecho sobre app, "open module settings", app-dependencies, Add-"Module dependency", jplot1.0-"clik ok".   
 ![GitHub Logo](/imagenes/p2.png)
-4. ya puedes crear el primer gráfico ya se estatico o dinámico. 
+4. ya puedes crear el primer gráfico ya se estatico o dinámico, circular o de barras.
 #  Gráfico con Series de Puntos (x,y)
     en activity_main.xml agregar;
     
@@ -109,8 +115,8 @@ los siguientes metodos ajustan el tamaño de texto reciben como parametro un ent
 * public void SetGruesoLinea(int g).
 >Ajusta el grueso de la linea que une los puntos
 
-Los siguientes métodos ajustan colores en el gráfico reciben 3 parámetros de tipo entero r=rojo, g=verde, b=azul
-* public void SetColorFondo(int r,int g,int b)      
+Los siguientes métodos ajustan colores en el gráfico reciben 3 parámetros de tipo entero r=rojo, g=verde, b=azul el color de fondo recibe un parametro mas "int a" a define la transparencia del fondo.
+* public void SetColorFondo(int a,int r,int g,int b)      
 * public void SetColorEjes(int r,int g,int b)        
 * public void SetColorCuadricula(int r, int g, int b)
 * public void SetColorTitulo(int r,int g,int b)      
@@ -184,6 +190,10 @@ En MainActivity.java agregar
 >ajusta el color del texto dentro del grafico circular
 * public void SetColorFondo(int r, int g,int b)
 >ajusta el color de fondo.
+*  public void SetColorDato(int dato,int r,int g,int b)
+>cambia el color de una rebanada del gráfico circular que corresponde a "dato" el color se ajusta al proporcionar r,g,b.
+*public void SetColorContorno(int r,int g,int b)
+>cambia el color del contorno del grafico que es el espacio entre cada rebana y del circulo que encierra el gráfico.
 
 los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de las acotaciones, del texto dentro del grafico(cada sector).
 * public void SetSizeTitulo(int s)
@@ -214,7 +224,7 @@ los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de 
             
      </LinearLayout>
      
-     
+
  En MainActivity.java agregar 
  
 
@@ -250,6 +260,10 @@ los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de 
         
         }
       }
+      
+ El resultado es 
+ ![GitHub Logo](/imagenes/bc.png)
+           
       
 ## Columnas agrupadas
 
