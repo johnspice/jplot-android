@@ -191,9 +191,9 @@ En MainActivity.java agregar
 >ajusta el color del texto dentro del grafico circular
 * public void SetColorFondo(int r, int g,int b)
 >ajusta el color de fondo.
-*  public void SetColorDato(int dato,int r,int g,int b)
+* public void SetColorDato(int dato,int r,int g,int b)
 >cambia el color de una rebanada del gráfico circular que corresponde a "dato" el color se ajusta al proporcionar r,g,b.
-*public void SetColorContorno(int r,int g,int b)
+* public void SetColorContorno(int r,int g,int b)
 >cambia el color del contorno del grafico que es el espacio entre cada rebana y del circulo que encierra el gráfico.
 
 los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de las acotaciones, del texto dentro del grafico(cada sector).
