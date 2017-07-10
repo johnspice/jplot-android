@@ -2,15 +2,15 @@
 JPLOT  es una librería para graficar Puntos(x,y) ya sea graficos estáticos o Series de tiempo, gráficos circulares y de barras . Esta libreria es para Android y Windows mobile 10(en desarrollo). Existen varias librerias para graficar datos en android como AchartEngine, GraphView ,AndroidPlot, AFreeChart etc. ¿porque jplot? "ES LA MAS SIMPLE DE USAR Con 3 lineas ya se tiene un gráfico" Alta personalización en los gráficos y buena estética, además esta en Español.
 
 APPS QUE USAN JPLOT.
-https://play.google.com/store/apps/details?id=com.plotpoints.troyappslite.plotpointsleastsquares&hl=es_419
-https://play.google.com/store/apps/details?id=fourierfft.pro.troyapps.com.fourierfft&hl=es_419
-https://www.microsoft.com/es-mx/store/p/minimos-cuadrados-least-squares/9nmsvqz0pscc
+* https://play.google.com/store/apps/details?id=com.plotpoints.troyappslite.plotpointsleastsquares&hl=es_419
+* https://play.google.com/store/apps/details?id=fourierfft.pro.troyapps.com.fourierfft&hl=es_419
+* https://www.microsoft.com/es-mx/store/p/minimos-cuadrados-least-squares/9nmsvqz0pscc
 
 proximas implementaciones:
 * plano polar
 * coordendas geograficas latitud longitud sobre mapamundi
 * grafico de burbujas
-* En todos graficos podran aceptar texturas para mejorar las graficas, por ahora solo acepta colores en r=red, g=green, b=blue. 
+* Todos graficos podran aceptar texturas para mejorar las graficas. 
 
 
 
