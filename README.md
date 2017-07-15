@@ -25,10 +25,10 @@ proximas implementaciones:
 
 # Como Agregar a mi proyecto Android Studio
 puedes ver el procedimiento en youtube: https://www.youtube.com/watch?v=PmizMdG3E48&t=59s
-1. descarga el proyecto y extrae "jplot1.0.aar" que esta dentro de la carpeta "Libreria Jplot"
-2. en tu proyecto click derecho sobre app, new-module, "import .jar/.aar package", agregar el archivo "jplot1.0.aar"
+1. descarga el proyecto y extrae "jplot1.1.aar" que esta dentro de la carpeta "Libreria Jplot"
+2. en tu proyecto click derecho sobre app, new-module, "import .jar/.aar package", agregar el archivo "jplot1.1.aar"
 ![GitHub Logo](/imagenes/p1.png)
-3. en tu proyecto click derecho sobre app, "open module settings", app-dependencies, Add-"Module dependency", jplot1.0-"clik ok".   
+3. en tu proyecto click derecho sobre app, "open module settings", app-dependencies, Add-"Module dependency", jplot1.1-"clik ok".   
 ![GitHub Logo](/imagenes/p2.png)
 4. ya puedes crear el primer gráfico ya se estatico o dinámico, circular o de barras.
 #  Gráfico con Series de Puntos (x,y)
