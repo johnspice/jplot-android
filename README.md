@@ -8,7 +8,7 @@ APPS QUE USAN JPLOT.
 
 proximas implementaciones:
 * plano polar
-* coordendas geograficas latitud longitud sobre mapamundi
+* Reconocimiento y evaluación de funciones del tipo "2*x+3*cos(3*x+2)"
 * grafico de burbujas
 * Todos graficos podran aceptar texturas para mejorar las graficas. 
 
