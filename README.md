@@ -136,6 +136,10 @@ Los siguientes métodos ajustan colores en el gráfico reciben 3 parámetros de 
 * public void SetColorSerie2(int r, int g, int b)
 * public void SetColorSerie3(int r, int g, int b)
 * public void SetColorSerie4(int r, int g, int b)
+* public void SetImagFondo0(Bitmap b)
+>ajusta  un Bitmap al Fondo de todo el gráfico
+* public void SetImagFondo1(Bitmap b)
+>ajusta un Bitmap al Fondo del gráfico, pero solo la cuadricula
 
 
 
