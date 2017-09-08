@@ -138,8 +138,10 @@ Los siguientes métodos ajustan colores en el gráfico reciben 3 parámetros de 
 * public void SetColorSerie4(int r, int g, int b)
 * public void SetImagFondo0(Bitmap b)
 >ajusta  un Bitmap al Fondo de todo el gráfico
+![GitHub Logo](/imagenes/fondo0.png)
 * public void SetImagFondo1(Bitmap b)
 >ajusta un Bitmap al Fondo del gráfico, pero solo la cuadricula
+![GitHub Logo](/imagenes/fondo1.png)
 
 
 
