@@ -15,7 +15,7 @@ proximas implementaciones:
 
 
 ![GitHub Logo](/imagenes/SerieContinua.png)
-![GitHub Logo](/imagenes/seriePuntos.png)
+![GitHub Logo](/imagenes/fondo0.png)
 ![GitHub Logo](/imagenes/pastel.png)
 ![GitHub Logo](/imagenes/BC.png)
 ![GitHub Logo](/imagenes/BCA.png)
