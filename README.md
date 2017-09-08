@@ -60,7 +60,7 @@ En MainActivity.java agregar
            setContentView(R.layout.activity_main);
            context=this;
            pantalla= (LinearLayout) (findViewById(R.id.pantalla));
-           
+         
            X=new float[4]; Y=new float[4];// si se desean graficar datos tipo double debe convertirse de "double a float"
            X[0]=3.4f;Y[0]=2.5f;
            X[1]=11.3f;Y[1]=6.6f;
@@ -71,6 +71,13 @@ En MainActivity.java agregar
                                                 //con una linea
            /*antes de mostrar el grafico en pantalla(LinearLayout) deben de ir todos los ajustes "Set" del grafico.
            Todos los metodos publicos que ayudan a personalizar el grafico se describen cada uno en la siguiente sección */
+           
+           /*
+           //agregando imagem.png al fondo de la cuadricula que esta en la carpeta "drawable" del proyecto.
+           Drawable myDrawable = getResources().getDrawable(R.drawable.fneon);//debe cambiarse "fneon" por tu imagen
+           Bitmap myFondo = ((BitmapDrawable) myDrawable).getBitmap();
+           plot.SetImagFondo1(myFondo);
+           */
            
            plot.SetHD(true); //ajustamos la calidad hd que suaviza bordes del grafico. por default esta desactivado 
            plot.SetTouch(true);// activa el touch sobre el grafico no es necesario colocarlo ya que por default esta activado  
