@@ -8,9 +8,9 @@ APPS QUE USAN JPLOT.
 
 proximas implementaciones:
 * plano polar
-* Reconocimiento y evaluación de funciones del tipo "2*x+3*cos(3*x+2)"
+* Reconocimiento y evaluación de funciones del tipo "2*x+3*cos(3*x+2)" ->(ya esta implementado revisa la wiki)
 * grafico de burbujas
-* Todos graficos podran aceptar texturas para mejorar las graficas. 
+* Todos graficos podran aceptar texturas para mejorar las graficas ->(ya implementado para los fondos de los graficos) 
 
 
 
