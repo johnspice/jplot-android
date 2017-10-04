@@ -92,7 +92,7 @@ En MainActivity.java agregar
  revisar el codigo ejemplo que esta en la carpeta "Ejemplos usando Jplot"
 
 
-### Métodos Publicos que ayudan a configurar el panel de graficado
+### Métodos Publicos que ayudan a configurar el Gráfico de puntos (x,y) 
 los siguientes 4 metodos se usa para graficar series de Datos
 * public void SetSerie1( float[] xvalues, float[] yvalues,String Titulo,int tp,boolean Unirpuntos)  
 >grafica la primer serie de datos. Sus parametros son dos flotantes para los valores x,y. "String Titulo" el titulo de la serie1 de datos a mostrar en la leyenda del grafico. "int tp" entero para tamaño de punto si no se desea ver el punto colocar 0. "boolean UnirPuntos" si se coloca true todos los puntos van unidos con una linea, false no se unen los puntos. 
@@ -198,7 +198,7 @@ En MainActivity.java agregar
          
      
 
-### Métodos Publicos que ayudan a configurar el gráfico
+### Métodos Publicos que ayudan a configurar el gráfico de Pastel
 * public void SetDatos(float[] datapoints,String [] etiquetas  )
 >inicializa el graficado recibiendo los datos con sus respectivas etiquetas. 
 * public void SetColorTitulo(int r,int g, int b)
@@ -226,6 +226,13 @@ los siguientes 3 metodos ajustan el tamaño del texto, del titulo principal, de 
 >mejora la grafica sualizando los bordes
 * public void SetCentro (double c)
 >aumenta o disminuye el centro del grafico deben ser valores tipo double entre 0 y 1 ó no se aplicara el ajuste.
+* public void SetImagFondo(Bitmap b)
+>ajusta una imagen de fondo, pasandole un bitmap. el bitmap puede obtenerse de los recursos en la aplicacion ejemplo:
+    Drawable myDrawable = getResources().getDrawable(R.drawable.fondo);
+    Bitmap myFondo = ((BitmapDrawable) myDrawable).getBitmap();
+    fondo debe cambiarse por tu imagen que esta en la carpeta res/drawable de tu proyecto, myFondo ya puede ser pasado al metodo.
+* public void SetImagFondoCentro(Bitmap b)
+>ajusta imagen de fondo unicamente al centro del circulo del pastelito. Recibe bitmap igual que el metodo "SetImagFondo" 
        
 # Gráfico de Barras
 hay codigo fuente para android studio de ejemplo en la carpeta "Ejemplos usando Jplot" descargalo y encontraras los 4 ejemplos de gráfico de barras posibles.
@@ -417,5 +424,59 @@ El resultado es
  
  El resultado es 
  ![GitHub Logo](/imagenes/bcapi.png)    
+ 
+### Métodos Publicos que ayudan a configurar los Graficos de Barras
+ 
+* public void SetTitulo(String t)
+>Ajusta el titulo principal del grafico recibe String con el titulo.
+* public void SetSizeTitulo(int z)
+>ajusta el tamaño del Titulo principal, recibe entero z tal que 6<z<51, si se pasa otro valor de z se asignara por default z=26
+* public void SetSizeTextX(int z)
+>ajusta el tamaño del texto del ejeX, recibe entero z tal que, 6<z<26. si pasa otro valor de z se asiganra por default z=11 
+* public void SetSizeNumbersY(int z)
+>ajusta el tañano del texto en el ejeY (escala), recibe entero z tal que 6<z<26, si se pasa otro valor de z se asignara por default z=11
+* public void SetSizeTituloY(int z)
+>ajusta el tañano del titulo del ejeY, recibe entero z tal que 6<z<41, si se pasa otro valor de z se asignara por default z=16
+* public void SetSizeAcot(int z)
+>ajusta tamaño de las acotaciones, recibe entero z tal que 6<z<26, si se pasa otro valor de z se asignara por default z=10 
+* public void SetValuePorcent(char vp)(Solo aplica para barras apiladas al 100%)
+>recibe una char 'v' ó 'p'. Si se pasa 'v' pondrá en cada barra el valor que representa esa barra, si recibe 'p' mostrara en las barras el tanto porciento que representa cada barra.
+* public void SetHD(boolean hd)
+>ajusta el dibujado haciendo un alisamiento en los bordes al dibujar, para suavizar los dibujos. recibe booleano true o false.
+* public void SetColorTextX(int r,int g, int b)
+>ajusta el color al texto en el ejeX, recibe tres enteros r,g,b deben ser valores entre 0 y 255.
+* public void SetColorFondo(int a,int r,int g,int b)
+>ajusta color de fondo, solo si no se ajusto el metodo "SetImagFondo0". recibe 3 enteros de color RGB.
+* public void SetColorNumbersY(int r,int g, int b)
+>ajusta color de los numeros(escala) en el ejeY. recibe 3 enteros de color RGB.
+* public void SetColorLineasY(int r,int g,int b)
+>ajusta color de las lineas(escala) en el ejeY. recibe 3 enteros de color RGB.
+* public void SetColorTitulo(int r,int g, int b)
+>ajusta color del titulo principal. Recibe 3 enteros de color RGB.
+* public void SetColorTituloY(int r,int g, int b)
+>ajusta el color al titulo del ejeY. Recibe 3 colores RGB.
+* public void SetColorAcot(int r,int g,int b)
+>ajusta el color de las acotaciones. Recibe 3 colores RGB.
+* public void SetColorEjeX(int r,int g,int b)
+> ajusta el color del texto(escala o texto) del ejeX. Recibe 3 colores RGB.
+* public void SetColorTextBarras(int r,int g,int b)
+>ajusta el color del texto en las barras que muestra el valor numerico que representa la barra. Recibe 3 colores RGB.
+* public void SetColorContorno(int r,int g,int b)
+>ajusta el color del contorno de cada barra. Recibe 3 colores RGB.
+* public void SetColorPila(int i,int r,int g,int b)
+>cambia el color del dato "i" o columna "i" pasabdole el color en RGB. 
+* public void SetContorno(int w)
+>ajusta el grueso del controno de las barras si recibe un w=0 no tendran contorno las barras 
+* public void SetTouch(boolean t)
+>activa o desactiva el touch en pantalla. recibe booleano true o false.
+* public void SetImagFondo0(Bitmap b)
+>ajusta una imagen de fondo, pasandole un bitmap. el bitmap puede obtenerse de los recursos en la aplicacion ejemplo:
+    Drawable myDrawable = getResources().getDrawable(R.drawable.fneon);
+    Bitmap myFondo = ((BitmapDrawable) myDrawable).getBitmap();
+fneon debe cambiarse por tu imagen que esta en la carpeta res/drawable de tu proyecto, myFondo ya puede ser pasado al metodo.
+* public void SetImagFondo1(Bitmap b)
+>ajusta imagen de fondo unicamente a la cuadricula. recibe un bitmap.
+ 
+
      
 
