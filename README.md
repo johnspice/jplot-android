@@ -1,4 +1,4 @@
-# JPLOT (android )
+# JPLOT [android(java) - IOS (swift)]
 JPLOT  es una librería .aar para graficar Puntos(x,y) ya sea graficos estáticos o Series de tiempo, gráficos circulares y de barras . Esta libreria es para Android y Windows mobile 10(cancelada). Existen varias librerias para graficar datos en android como AchartEngine, GraphView ,AndroidPlot, AFreeChart etc. ¿porque jplot? "ES LA MAS SIMPLE DE USAR Con 3 lineas ya se tiene un gráfico" Alta personalización en los gráficos y buena estética, además esta en Español.
 
 APPS QUE USAN JPLOT.
@@ -11,7 +11,8 @@ proximas implementaciones:
 * Reconocimiento y evaluación de funciones del tipo "2*x+3*cos(3*x+2)" ->(ya esta implementado revisa la wiki)
 * grafico de burbujas
 * Todos graficos podran aceptar texturas para mejorar las graficas ->(ya implementado para los fondos de los graficos) 
-* JPLOT PARA IOS (swift- en construccion)
+* LA IMPLEMENTACION DE JPLOT PARA IOS CON SWIFT ESTA en construccion.
+![GitHub Logo](/imagenes/iphone.png)
 
 
 
