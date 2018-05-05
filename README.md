@@ -66,7 +66,7 @@ En MainActivity.java agregar
            X=new float[4]; Y=new float[4];// si se desean graficar datos tipo double debe convertirse de "double a float"
            X[0]=3.4f;Y[0]=2.5f;
            X[1]=11.3f;Y[1]=6.6f;
-           X[2]=12.4f;Y[2]=7.6f:
+           X[2]=12.4f;Y[2]=7.6f;
            X[3]=20.9f;Y[3]=10.4f;
            plot = new PlotPlanitoXY(context,"Titulo principal del grafico","titulo eje x","titulo eje y");
            plot.SetSerie1(X,Y,"graph 1",5,true);// el 5 es el tamaño de punto "true" es para unir los puntos 
