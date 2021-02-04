@@ -4,7 +4,6 @@ JPLOT  es una librería .aar para graficar Puntos(x,y) ya sea graficos estático
 APPS QUE USAN JPLOT.
 * https://play.google.com/store/apps/details?id=com.plotpoints.troyappslite.plotpointsleastsquares&hl=es_419
 * https://play.google.com/store/apps/details?id=fourierfft.pro.troyapps.com.fourierfft&hl=es_419
-* https://www.microsoft.com/es-mx/store/p/minimos-cuadrados-least-squares/9nmsvqz0pscc
 
 proximas implementaciones:
 * plano polar
@@ -26,10 +25,27 @@ proximas implementaciones:
 ![GitHub Logo](/imagenes/BCAPI100.png)
 
 
-# Como Agregar a mi proyecto Android Studio
+# Agregar a mi proyecto Android Studio
+## usando Gradle
+en el archivo build.gradle(:app) agrega lo siguiente 
+
+
+    repositories {
+      maven {
+        url 'https://dl.bintray.com/juangabriel/jplot'
+      }
+    }
+
+
+    dependencies {
+      implementation 'com.gabrielopez.plot:jplot:1.2.0'
+    }
+
+
+## Descargando el archivo .aar
 puedes ver el procedimiento en youtube: https://www.youtube.com/watch?v=PmizMdG3E48&t=59s
 1. clona el proyecto y extrae "jplot1.2.aar" que esta dentro de la carpeta "Libreria Jplot"
-2. copia "jplot1.1.aar" dentro de tu proyecto:  yourProject/app/libs  debe tener la siguiente ubicacion:
+2. copia "jplot1.2.aar" dentro de tu proyecto:  yourProject/app/libs  debe tener la siguiente ubicacion:
 ![GitHub Logo](/imagenes/paso1.png)
 3. en tu proyecto click derecho sobre app, "open module settings",app-dependencies, Add "Jar-Dependency", escribe libs, ok, apply-ok.   
 ![GitHub Logo](/imagenes/paso2.png)
