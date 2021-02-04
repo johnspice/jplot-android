@@ -1,8 +1,13 @@
 # JPLOT [android(java) - IOS (swift)]
 JPLOT  es una librería .aar para graficar Puntos(x,y) ya sea graficos estáticos o Series de tiempo, gráficos circulares y de barras . Esta libreria es para Android y Windows mobile 10(cancelada) IOS(en construccion). Existen varias librerias para graficar datos en android como AchartEngine, GraphView ,AndroidPlot, AFreeChart etc. ¿porque jplot? "ES LA MAS SIMPLE DE USAR Con 3 lineas ya se tiene un gráfico" Alta personalización en los gráficos y buena estética, además esta en Español.
 
+![GitHub Logo](/imagenes/fondo0.png)
+![GitHub Logo](/imagenes/muestra2.png)
+![GitHub Logo](/imagenes/muestra3.png)
+
+
 APPS QUE USAN JPLOT.
-* https://play.google.com/store/apps/details?id=com.plotpoints.troyappslite.plotpointsleastsquares&hl=es_419
+* https://play.google.com/store/apps/details?id=com.troyasoft.pro.serialplot&hl=es_419
 * https://play.google.com/store/apps/details?id=fourierfft.pro.troyapps.com.fourierfft&hl=es_419
 
 proximas implementaciones:
@@ -13,17 +18,6 @@ proximas implementaciones:
 * Todos graficos podran aceptar texturas para mejorar las graficas ->(ya implementado para los fondos de los graficos) 
 * LA IMPLEMENTACION DE JPLOT PARA IOS CON SWIFT ESTA en construccion.
 ![GitHub Logo](/imagenes/iphone.png)
-
-
-
-![GitHub Logo](/imagenes/SerieContinua.png)
-![GitHub Logo](/imagenes/fondo0.png)
-![GitHub Logo](/imagenes/pastel.png)
-![GitHub Logo](/imagenes/BC.png)
-![GitHub Logo](/imagenes/BCA.png)
-![GitHub Logo](/imagenes/BCAPI.png)
-![GitHub Logo](/imagenes/BCAPI100.png)
-
 
 # Agregar a mi proyecto Android Studio
 ## usando Gradle
