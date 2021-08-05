@@ -4,6 +4,7 @@ JPLOT  es una librería .aar para graficar Puntos(x,y) ya sea graficos estático
 ![GitHub Logo](/imagenes/fondo0.png)
 ![GitHub Logo](/imagenes/muestra2.png)
 ![GitHub Logo](/imagenes/muestra3.png)
+![GitHub Logo](/imagenes/midlecircle.gif)
 
 
 APPS QUE USAN JPLOT.
@@ -24,22 +25,22 @@ proximas implementaciones:
 en el archivo build.gradle(:app) agrega lo siguiente 
 
 
+    
     repositories {
-      maven {
-        url 'https://dl.bintray.com/juangabriel/jplot'
-      }
+        maven {
+            url "https://dl.cloudsmith.io/public/troysoft/jplot/maven/"
+        }
     }
 
-
     dependencies {
-      implementation 'com.gabrielopez.plot:jplot:1.2.0'
+      implementation 'com.gabrielopez.plot:jplot:1.5'
     }
 
 
 ## Descargando el archivo .aar
 puedes ver el procedimiento en youtube: https://www.youtube.com/watch?v=PmizMdG3E48&t=59s
-1. clona el proyecto y extrae "jplot1.2.aar" que esta dentro de la carpeta "Libreria Jplot"
-2. copia "jplot1.2.aar" dentro de tu proyecto:  yourProject/app/libs  debe tener la siguiente ubicacion:
+1. clona el proyecto y extrae "jplot1.5.aar" que esta dentro de la carpeta "Libreria Jplot"
+2. copia "jplot1.5.aar" dentro de tu proyecto:  yourProject/app/libs  debe tener la siguiente ubicacion:
 ![GitHub Logo](/imagenes/paso1.png)
 3. en tu proyecto click derecho sobre app, "open module settings",app-dependencies, Add "Jar-Dependency", escribe libs, ok, apply-ok.   
 ![GitHub Logo](/imagenes/paso2.png)
