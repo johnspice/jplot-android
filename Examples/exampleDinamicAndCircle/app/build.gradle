@@ -31,13 +31,13 @@ android {
 repositories {
     //add maven for jplot
     maven {
-        url 'https://dl.bintray.com/juangabriel/jplot'
+        url "https://dl.cloudsmith.io/public/troysoft/jplot/maven/"
     }
 }
 
 dependencies {
     //add implementation for jplot
-    implementation 'com.gabrielopez.plot:jplot:1.2.0'
+    implementation 'com.gabrielopez.plot:jplot:1.7'
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.gabrielopez.plot:jplot:1.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/585968ad88e7cad6e67f4809ff2cb869/jetified-jplot-1.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/585968ad88e7cad6e67f4809ff2cb869/jetified-jplot-1.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/585968ad88e7cad6e67f4809ff2cb869/jetified-jplot-1.7/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

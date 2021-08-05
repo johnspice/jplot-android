@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import com.juang.jplot.PlotPastelito;
 import com.juang.jplot.PlotPlanitoXY;
+import com.juang.jplot.PlotSemiCircle;
 
 import java.util.Timer;
 
@@ -20,8 +22,9 @@ public class MainActivity extends AppCompatActivity {
     private PlotPlanitoXY plot;
     private PlotPastelito pastel;
 
-    private LinearLayout pantalla;
-    private Button inicia,butpastel;
+
+    private LinearLayout pantalla,pantalla2,graphup,graphleft,graphright,graphdown;
+    private Button inicia,butpastel,btnMidleCircle;
     Context context;
     int i=0; // contador de datos
 
@@ -41,8 +44,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         pantalla= (LinearLayout) (findViewById(R.id.pantalla));
+        pantalla2= (LinearLayout) (findViewById(R.id.pantalla2));
+
+        graphup= (LinearLayout) (findViewById(R.id.graphup));
+        graphleft= (LinearLayout) (findViewById(R.id.graphleft));
+        graphright=(LinearLayout) (findViewById(R.id.graphright));
+        graphdown=(LinearLayout) (findViewById(R.id.graphdown));
+
         inicia =(Button)(findViewById(R.id.inicia));
         butpastel=(Button)(findViewById(R.id.butPastel));
+        btnMidleCircle=(Button)(findViewById(R.id.butMidleCircle));
+
+
         context=this;
 
         //boton plot2d
@@ -51,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
+                pantalla.setVisibility(View.VISIBLE);
+                pantalla2.setVisibility(View.GONE);
                 inicia(); // se ejecuta el metodo inicia
 
             }
@@ -63,7 +78,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
+                pantalla.setVisibility(View.VISIBLE);
+                pantalla2.setVisibility(View.GONE);
                 GraphPastel();
+
+            }
+        });
+
+
+       btnMidleCircle.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                pantalla.setVisibility(View.GONE);
+                pantalla2.setVisibility(View.VISIBLE);
+                plotMidleCircle(view);
 
             }
         });
@@ -170,9 +200,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //metodo que se ejecuta al hacer click en el boton "parar plot 2d"
     public void parar(View v){
         timer.cancel();
+    }
+
+    public void plotMidleCircle(View v){
+
+        PlotSemiCircle psleft = new PlotSemiCircle(this,65,'l');
+        PlotSemiCircle psright = new PlotSemiCircle(this,74,'r');
+        PlotSemiCircle psup = new PlotSemiCircle(this,49,'u');
+        PlotSemiCircle psdown = new PlotSemiCircle(this,100,'d');
+
+        //psleft.setColorGradient(Color.BLACK,Color.RED);
+        //psleft.setAnimation(5000,1);
+        //psleft.setColorText(Color.GREEN);
+        //psleft.setAnimation(2000,2);
+        //psleft.setHD(true);
+
+        graphleft.addView(psleft);
+        graphup.addView(psup);
+        graphdown.addView(psdown);
+        graphright.addView(psright);
+
     }
 
 
